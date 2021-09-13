@@ -1,0 +1,3 @@
+# py-wled-tests
+This was a very simple project meant to debug some timeout issues I was having when interacting with WLED in Go, in my repository at https://github.com/TheOtherDavid/wled-tests.
+Originally in the execution of that Go code, the code would encounter timeout errors after the fifth call. However, no timeouts were experienced when calling WLED directly using Postman. To gather more information, the code was rewritten in Python, in this repo. After writing the code, it was discovered that no timeouts were occurring! This successfully helped debug how an improperly configured HTTP Client in the Go code was causing the issue.
